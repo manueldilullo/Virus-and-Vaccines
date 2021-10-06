@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.StatsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/stats_title_spacing"
+            android:text=""
+            android:textSize="@dimen/stats_title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/stats_spacing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCountryName">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/tvTotalCasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_cases_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalCases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDailyCasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_cases_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDailyCases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceCasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difference_titles"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceCases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="false"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stats_horizontal_divider"
+                    android:background="?android:attr/listDivider"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvTotalTestsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_tests_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalTests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDailyTestsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_tests_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDailyTests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceTestsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difference_titles"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceTests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stats_horizontal_divider"
+                    android:background="?android:attr/listDivider"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvTotalDeceasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_deceases_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalDeceases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDailyDeceasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_deceases_title"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDailyDeceases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/stats_spacing"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceDeceasesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difference_titles"
+                    android:textSize="@dimen/stats_subtitle_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDifferenceDeceases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/stats_content_size" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/stats_horizontal_divider"
+                    android:background="?android:attr/listDivider"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

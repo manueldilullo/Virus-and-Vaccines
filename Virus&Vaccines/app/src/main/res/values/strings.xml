@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Virus&amp;Vaccines</string>
+
+    <!-- RapidApi datas and headers-->
+    <string name="api_sixmonth_url">https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/covid-ovid-data/sixmonth/</string>
+    <string name="api_specific_url">https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/country-report-iso-based/</string>
+    <string name="rapidapi_key">67a46a8308msh4d6d1a9a637ce95p1b34e2jsneb9f55b084c2</string>
+    <string name="rapidapi_vaccovid">vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com</string>
+
+    <string name="login_username_placeholder">Username</string>
+    <string name="login_button_date">Birthdate</string>
+    <string name="login_button_text">Login</string>
+
+    <!-- Fragments titles -->
+    <string name="fragment_player_title">Player</string>
+    <string name="fragment_reccomendation_title">Reccomendations</string>
+    <string name="fragment_stats_title">Statistics</string>
+
+    <!-- Player Fragment -->
+    <string name="surgical_mask">Surgical Mask</string>
+    <string name="ffp2_mask">FFP2 Mask</string>
+    <string name="duration">duration</string>
+    <string name="sanitizer">Sanitizer</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="first_dose">First dose</string>
+    <string name="second_dose">Second Dose</string>
+
+    <!-- Reccomendation Fragment -->
+    <string name="descrizione">Description</string>
+
+    <!-- Statistics Fragment -->
+    <string name="total_vaccines_title">Total vaccines</string>
+    <string name="daily_vaccines_title">Daily vaccines</string>
+
+    <string name="total_cases_title">Total cases</string>
+    <string name="daily_cases_title">Daily cases</string>
+
+    <string name="total_tests_title">Total tests</string>
+    <string name="daily_tests_title">Daily tests</string>
+
+    <string name="total_deceases_title">Total deceases</string>
+    <string name="daily_deceases_title">Daily deceases</string>
+
+    <string name="difference_titles">Difference</string>
+</resources>

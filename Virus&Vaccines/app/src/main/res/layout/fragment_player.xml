@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.PlayerFragment">
+
+    <LinearLayout
+        android:id="@+id/VerticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/player_horizontalMargin"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/stats_spacing"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/ibPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/hlSurgical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSurgical"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/surgical_mask"
+                android:textSize="@dimen/player_text_size" />
+
+            <TextView
+                android:id="@+id/tvSurgicalDuration"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/duration"
+                android:textSize="@dimen/player_text_size" />
+
+            <CheckBox
+                android:id="@+id/cbSurgical"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hlFfp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFfp2"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ffp2_mask"
+                android:textSize="@dimen/player_text_size" />
+
+            <TextView
+                android:id="@+id/tvFfp2Duration"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/duration"
+                android:textSize="@dimen/player_text_size" />
+
+            <CheckBox
+                android:id="@+id/cbFfp2"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hlSanitizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSanitizer"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sanitizer"
+                android:textSize="@dimen/player_text_size" />
+
+            <TextView
+                android:id="@+id/tvBlankSpace"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/cbSanitizer"
+                android:layout_width="@dimen/player_columns_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hlVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvVaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vaccine"
+                android:textSize="@dimen/player_text_size" />
+
+            <RadioGroup
+                android:id="@+id/rgVaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbFIrstDose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_dose"
+                    android:textSize="@dimen/player_text_size" />
+
+                <RadioButton
+                    android:id="@+id/rbSecondDose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_dose"
+                    android:textSize="@dimen/player_text_size" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

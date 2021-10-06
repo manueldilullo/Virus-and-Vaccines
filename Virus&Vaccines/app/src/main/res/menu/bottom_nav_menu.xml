@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/player"
+        android:title="Player"
+        android:icon="@drawable/ic_baseline_games_24"/>
+    <item
+        android:id="@+id/recommendations"
+        android:title="Recommendations"
+        android:icon="@drawable/ic_baseline_local_activity_24"/>
+    <item
+        android:id="@+id/stats"
+        android:title="Stats"
+        android:icon="@drawable/ic_baseline_auto_graph_24"/>
+</menu>

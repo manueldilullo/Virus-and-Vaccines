@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_spacing">24sp</dimen>
+
+    <!-- Player Fragment -->
+    <dimen name="player_spacing">32sp</dimen>
+    <dimen name="player_text_size">18sp</dimen>
+    <dimen name="player_columns_size">64sp</dimen>
+    <dimen name="player_horizontalMargin">12sp</dimen>
+
+    <!-- Statistics Fragment -->
+    <dimen name="stats_title_spacing">32sp</dimen>
+    <dimen name="stats_title_size">40sp</dimen>
+    <dimen name="stats_spacing">16sp</dimen>
+
+    <dimen name="stats_subtitle_size">26sp</dimen>
+    <dimen name="stats_content_size">20sp</dimen>
+    <dimen name="stats_horizontal_divider">32sp</dimen>
+</resources>
